@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    color: whitesmoke;
+}
+
+
+.countdown{
+    margin: 100px 0;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+dd{
+    font-size: 65px;
+}
+dt{
+    font-size: 32px;
+}

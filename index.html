@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>RP SMENA 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body bgcolor="#2F4F4F">
+    <h1>Калькулятор смен Руин Полнолуния</h1>
+
+    <div id="linkCreator">
+        <label for="typosmena">Выберите текущую смену:</label>
+        <select id="smena_input" name="smena_choice">
+            <option value="d">День</option>
+            <option value="n">Ночь</option>
+        </select>
+        <label for="time"><br>Осталось минут до следующей смены: </label>
+        <input id="userdata" type="text" oninput="this.value = this.value.replace(/\D/g, '')"
+            placeholder="Только цифры">
+
+        <button id="myButton">Создать ссылку</button>
+        <p></p>
+        <p style="display:inline">Ссылка на настроенный калькулятор: </p>
+        <a id="preparedLink"></a>
+        <p id="comment"></p>
+    </div>
+
+    <div id="smenaCalc">
+
+
+        <h2 id="smena"></h2>
+
+        <dl class="countdown">
+
+            <!-- <div class="item">
+            <dt class="days-text">days</dt>
+            <dd class="days">00</dd>
+        </div> -->
+
+            <div class="item">
+                <dt class="hours-text">hours</dt>
+                <dd class="hours">00</dd>
+            </div>
+
+            <div class="item">
+                <dt class="minutes-text">minutes</dt>
+                <dd class="minutes">00</dd>
+            </div>
+
+            <div class="item">
+                <dt class="seconds-text">seconds</dt>
+                <dd class="seconds">00</dd>
+            </div>
+
+        </dl>
+    </div>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
